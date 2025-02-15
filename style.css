@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(248, 70%, 10%);
+    background-image: url("assets/images/background-desktop.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.line-bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -10;
+}
+
+.line-top{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -10;
+
+}
+.lines{
+    position: absolute;
+    height: 100%;
+    z-index: -10;
+}
+.logo{
+    margin: 20px 0;
+
+}
+
+.main-header{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.top-p{
+    text-align: center;
+    color: grey;
+    margin: 10px 0;
+}
+
+.form-container{
+    margin: 20 0;
+    padding: 20px;
+    width: 400px;
+}
+
+.form-container p {
+    color: white;
+    font-size: 18px;
+    margin: 10px 0;
+    z-index: 10;
+}
+input[type="file"] {
+    display: none;
+}
+.drag-div-label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.button-div{
+    display: flex;
+    gap: 10px;
+    display: none;
+}
+.change{
+    padding: 5px 3px;
+    border-radius: 5px;
+    background-color: hsla(252, 6%, 83%, 0.175);
+    border: 0;
+    color: grey;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+.delete:hover{
+    background-color: hsla(252, 6%, 53%, 0.175);
+}
+.change:hover{
+    background-color: hsla(252, 6%, 53%, 0.175);
+}
+
+.image-upload.dragging{
+    background-color: hsla(252, 6%, 99%, 0.175);
+}
+
+.delete{
+    padding: 5px 3px;
+    border-radius: 5px;
+    background-color: hsla(252, 6%, 83%, 0.175);
+    border: 0;
+    color: grey;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.drag-div{
+    width: 100%;
+    height: 120px;
+    background-color: hsla(252, 6%, 83%, 0.175);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 2px dashed grey;
+}
+
+
+.drag-div img{
+    background-color: rgba(128, 128, 128, 0.142);
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.drag-div img:hover{
+    background-color: rgba(128, 128, 128, 0.404);
+
+}
+
+.drag-div p{
+    cursor: pointer;
+}
+
+.form-container .info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgb(192, 189, 189);
+    font-size: 14px;
+}
+
+.form-container h2{
+    color: white;
+    font-size: 18px;
+    
+    margin: 15px 0;
+}
+
+.form-container input{
+    width: 100%;
+    background-color: hsla(252, 6%, 83%, 0.175);
+    border-radius: 10px;
+    border: 0.5px white solid;
+    margin-bottom: 10px;
+    height: 40px;
+}
+
+.generate{
+    background-color: hsl(7, 71%, 60%);
+    width: 100%;
+    border: 0;
+    padding: 15px 0;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    z-index: 10;
+
+
+}
+
+.generate:hover{
+    background-color: hsl(7, 71%, 50%);
+    cursor: pointer;
+}
+
+
+
+/* sumition form */
+
+.submitted-form{
+    display: none;
+   
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+.submitted-form p{
+    color: grey;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.ticket{
+    background-image: url("assets/images/pattern-ticket.svg");
+    height: 240px;
+    width: 550px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    flex-direction: column;
+}
+.bottom-logo{
+    height: 80%;
+}
+
+.ticket div p{
+    margin: 0;
+    text-align: left;
+    padding-left: 45px;
+}
+
+.filler {
+    display: flex;
+    gap: 10px;
+}
+
+.filler .fillerImg{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+
+.filler h3 {
+    color: white;
+
+}
+
+.filler div .Username{
+    text-align: left;
+    padding-left: 0;
+    width: 100%;
+    color: white;
+    
+}
+
+.filler div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.ticket div .date{
+    padding-left: 70px;
+}
+
+input{
+    color: white;
+}
+
+@media(max-width:580px){
+    .ticket{
+        height: 200px;
+        width: 450px;
+        padding: 30px;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 40px;
+        flex-direction: column;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .bottom-logo{
+        height: 70%;
+    }
+    
+   
+    
+    
+}
+
+@media(max-width:510px){
+    .ticket{
+        height: 200px;
+        width: 400px;
+        padding: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+        flex-direction: column;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .bottom-logo{
+        height: 60%;
+    }
+    
+    .filler .fillerImg{
+        width: 60px;
+        height: 60px;
+        border-radius: 5px;
+    }
+    
+    
+    
+}
+
+
+@media(max-width:420px){
+    .ticket{
+        height: 150px;
+        width: 350px;
+        /* padding: 10px; */
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+        flex-direction: column;
+        background-size: contain;
+        background-repeat: no-repeat;
+       
+    }
+    .bottom-logo{
+        height: 60%;
+    }
+    
+    .filler .fillerImg{
+        width: 60px;
+        height: 60px;
+        border-radius: 5px;
+    }
+    
+    
+    
+}
+
+@media(max-width:420px){
+    .ticket{
+        height: 150px;
+        width: 300px;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+        flex-direction: column;
+        background-size: contain;
+        background-repeat: no-repeat;
+       
+    }
+    .bottom-logo{
+        height: 60%;
+    }
+    
+    .filler .fillerImg{
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    
+    
+    
+}
