@@ -13,12 +13,13 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
+    /* overflow: hidden; */
     
 }
 
 .line-bottom{
     position: absolute;
-    bottom: 0;
+    top: 100%;
     left: 0;
     z-index: -10;
 }
@@ -280,12 +281,36 @@ input{
         height: 70%;
     }
     
-   
+    body{
+       
+        height: 100%;
+        background-image: none;
+
+        
+    }
+    .line-bottom{
+        display: none;
+    }
+    
+    .line-top{
+       display: none;
+    
+    }
+    .lines{
+        display: none;
+    }
     
     
 }
 
 @media(max-width:510px){
+    body{
+       
+        height: 100%;
+       
+        background-image: none;
+
+    }
     .ticket{
         height: 200px;
         width: 400px;
@@ -307,39 +332,30 @@ input{
         border-radius: 5px;
     }
     
+    .line-bottom{
+        display: none;
+    }
+    
+    .line-top{
+       display: none;
+    
+    }
+    .lines{
+        display: none;
+    }
     
     
 }
 
 
+
 @media(max-width:420px){
-    .ticket{
-        height: 150px;
-        width: 350px;
-        /* padding: 10px; */
-        display: flex;
-        justify-content: space-evenly;
-        gap: 20px;
-        flex-direction: column;
-        background-size: contain;
-        background-repeat: no-repeat;
+    body{
        
+        height: 100%;
+       background-image: none;
+        
     }
-    .bottom-logo{
-        height: 60%;
-    }
-    
-    .filler .fillerImg{
-        width: 60px;
-        height: 60px;
-        border-radius: 5px;
-    }
-    
-    
-    
-}
-
-@media(max-width:420px){
     .ticket{
         height: 150px;
         width: 300px;
@@ -361,7 +377,31 @@ input{
         border-radius: 5px;
         margin-bottom: 10px;
     }
+    .logo{
+        height: 20px;
+    }
+    .main-header{
+        
+        font-size: 25px;
+    }
     
+    .top-p{
+        
+        font-size: 12px;
+    }
     
+    .form-container{
+        margin: 20 0;
+        padding: 20px;
+        width: 300px;
+    }
+    .line-bottom{
+        display: none;
+    }
+    
+    .line-top{
+       display: none;
+    
+    }
     
 }
